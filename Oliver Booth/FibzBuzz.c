@@ -4,9 +4,9 @@
 
 void fib(int n)
 {
-	int result=0;
-	int a =0;
-	int b=1;
+	long long  result=0;
+	long long a =0;
+	long long  b=1;
 	for(int i=0;i<n;i++)
 	{
 		if(a%3==0||a%5==0)
@@ -17,7 +17,7 @@ void fib(int n)
 				printf("Buzz");
 		}
 		else
-			printf(" %d ",a);
+			printf(" %lld ",a);
 		result=a+b;
 		b=a;
 		a=result;
@@ -29,7 +29,7 @@ void fib(int n)
 
 int main()
 {
-	int n = 10;
+	int n = 50;
 	fib(n);
 	return 0;
 }
