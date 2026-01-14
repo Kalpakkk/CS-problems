@@ -1,12 +1,8 @@
 #include <stdio.h>
 
-
-
 void fib(int n)
 {
-	long long  result=0;
-	long long a =0;
-	long long  b=1;
+	long long  result=0,a=0,b=1;
 	for(int i=0;i<n;i++)
 	{
 		if(a%3==0||a%5==0)
