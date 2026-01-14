@@ -9,10 +9,19 @@ void fib(int n)
 	int b=1;
 	for(int i=0;i<n;i++)
 	{
-		printf(" %d ",a);
+		if(a%3==0||a%5==0)
+		{
+			if(a%3==0)
+				printf("Fizz");
+			if(a%5==0)
+				printf("Buzz");
+		}
+		else
+			printf(" %d ",a);
 		result=a+b;
 		b=a;
 		a=result;
+		printf("\n");
 	}
 	
 }
